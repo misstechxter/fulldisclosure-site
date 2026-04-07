@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Apply</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <title>Apply — Full Disclosure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css?v=6">
+  <style>
+    .frame-wrap{margin-top:18px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.10)}
+    iframe{width:100%;height:78vh;border:0;background:#000}
+  </style>
 </head>
 <body>
 
 <video class="video-bg" autoplay muted loop playsinline>
-  <source src="/assets/balloons.mp4" type="video/mp4">
+  <source src="/assets/balloons.mp4?v=6" type="video/mp4">
 </video>
-
 <div class="overlay"></div>
 
 <div class="container">
-  <h1>Apply to Be Cast</h1>
+  <div class="card">
+    <h1>Apply to Be Cast</h1>
+    <p class="lead">
+      We’re casting real singles open to honest conversations and dating with intention.
+      Fill out the application below.
+    </p>
 
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGAAgj18rJi3p9MuFJtoaGgLUGQNqyXzA5BETlo6-_4QWulg/viewform"
-  width="100%" height="600"></iframe>
+    <div class="buttons">
+      <a href="/" class="btn">Back Home</a>
+      <a href="/event" class="btn">Event Info</a>
+    </div>
+
+    <div class="frame-wrap">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfGAAgj18rJi3p9MuFJtoaGgLUGQNqyXzA5BETlo6-_4QWulg/viewform?usp=dialog"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="small">
+      If the form doesn’t load, <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGAAgj18rJi3p9MuFJtoaGgLUGQNqyXzA5BETlo6-_4QWulg/viewform?usp=dialog" style="color:#fff;text-decoration:underline;">open it in a new tab</a>.
+    </div>
+  </div>
 </div>
 
 </body>
