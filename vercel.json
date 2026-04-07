@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/apply", "destination": "/apply.html" },
+    { "source": "/rsvp", "destination": "/rsvp.html" },
+    { "source": "/event", "destination": "/event.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
